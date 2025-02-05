@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Cypress Debug",
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceFolder}/node_modules/cypress/bin/cypress",
+        "args": ["open"],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen"
+      }
+    ]
+  }
+  

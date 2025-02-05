@@ -1,0 +1,39 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress-run-book-cart": "npx cypress run --headed --browser chrome --spec cypress/e2e/features/bookcart.feature",
+    "cy:run" : "cypress run --reporter cypress-mochawesome-reporter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Urvashijuneja/cypress-cucumber-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Urvashijuneja/cypress-cucumber-js/issues"
+  },
+  "homepage": "https://github.com/Urvashijuneja/cypress-cucumber-js#readme",
+  "stepDefinitions": [
+    "cypress/e2e/[filepath]/**/*.{js,ts}",
+    "cypress/e2e/[filepath].{js,ts}",
+    "cypress/e2e/support/step_definitions/*.{js,ts}"
+  ],
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "@types/cypress": "^0.1.6",
+    "cypress": "^14.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.4.1",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {
+    "cypress-on-fix": "^1.1.0"
+  }
+}
